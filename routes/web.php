@@ -44,8 +44,8 @@ Route::put('/historial/update/{id_historial}', [App\Http\Controllers\HistorialCo
 Route::get('/servicios/acceso-areas', function () {
     return view('servicios.acceso_areas');
 })->name('servicios.acceso_areas');
-Route::post('/historial/guardar', [HistorialController::class, 'store'])->name('historial.store');
-Route::post('/historial', [HistorialController::class, 'store'])->name('historial.store');
+//Route::post('/historial/guardar', [HistorialController::class, 'store'])->name('historial.store');
+//Route::post('/historial', [HistorialController::class, 'store'])->name('historial.store');
 
 Route::get('/historial/secciones/{id_servicio}', [HistorialController::class, 'editSecciones'])->name('historial.secciones.edit');
 Route::post('/historial/secciones/{id_servicio}', [HistorialController::class, 'updateSecciones'])->name('historial.secciones.update');
